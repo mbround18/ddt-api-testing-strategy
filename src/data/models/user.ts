@@ -1,7 +1,5 @@
 import BaseModel from './base';
 import { name } from 'faker';
-import * as data from '../../db.json';
-import { merge } from 'lodash';
 
 interface IUser {
   id: number;
@@ -9,12 +7,7 @@ interface IUser {
 }
 
 export default class User extends BaseModel<IUser> implements Partial<IUser> {
-  constructor() {
-    super();
-    this.collection = data.users;
-  }
-
-  public generateMock(): Partial<IUser> {
+  public async generateMock(): Promise<Partial<IUser>> {
     return {
       name: name.findName()
     };

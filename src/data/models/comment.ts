@@ -1,8 +1,5 @@
 import BaseModel from './base';
 import { lorem } from 'faker';
-import User from './user';
-import * as data from '../../db.json';
-import { merge } from 'lodash';
 import Post from './post';
 
 interface IComment {
@@ -14,17 +11,11 @@ interface IComment {
 export default class Comment
   extends BaseModel<IComment>
   implements Partial<IComment> {
-  constructor() {
-    super();
-    this.collection = data.comments;
-  }
-
-  public generateMock(): Partial<IComment> {
+  public async generateMock(): Promise<Partial<IComment>> {
+    const post = await new Post().findOne();
     return {
       body: lorem.paragraphs(2),
-      postId: new Post().findOne()?.id
+      postId: post.id
     };
   }
-
-  public toJson() {}
 }
