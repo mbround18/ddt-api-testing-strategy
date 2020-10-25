@@ -28,7 +28,7 @@ When breaking down an API to test, here are some basic acceptance criteria which
 
 - [x] Happy path tests were built for all major endpoints
 - [ ] Negative path tests were built testing for standard failures
-- [ ] Tests have detailed logs or reports helping to troubleshoot failures
+- [~] Tests have detailed logs or reports helping to troubleshoot failures
 - [x] Tests can be executed in parallel
 - [x] Tests are data driven for maximum coverage
 
