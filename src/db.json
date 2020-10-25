@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "title": "python",
+      "title": "typescript",
       "userId": 1,
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Nunc vel risus commodo viverra maecenas accumsan lacus vel."
     },
@@ -20,9 +20,13 @@
     }
   ],
   "comments": [
-    { "id": 1, "body": "Python is Fun!", "postId": 1 },
+    { "id": 1, "body": "Typescript is Fun!", "postId": 1 },
     { "id": 2, "body": "Git is Fun!", "postId": 1 },
-    { "id": 3, "body": "Thank you json-server!", "postId": 1 }
+    { "id": 3, "body": "Thank you json-server!", "postId": 1 },
+    { "id": 4, "body": "Banana", "postId": 2 },
+    { "id": 5, "body": "Thing", "postId": 3 },
+    { "id": 6, "body": "Qwerty", "postId": 1 },
+    { "id": 7, "body": "werujioergiujbrg", "postId": 3 }
   ],
   "users": [{ "id": 1, "name": "typicode" }]
 }

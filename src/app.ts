@@ -1,11 +1,16 @@
-import * as data from './db.json';
 import * as jsonServer from 'json-server';
+import { database } from './database';
+import * as agent from 'supertest';
 
 const server = jsonServer.create();
-const router = jsonServer.router(data);
+
+const router = jsonServer.router(database);
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 server.use(router);
 
+const request = agent(server);
+
+export { server, request };
 export default server;
