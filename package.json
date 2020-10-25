@@ -6,7 +6,7 @@
   "author": "Michael Bruno <12646562+mbround18@users.noreply.github.com>",
   "license": "Unlicense",
   "scripts": {
-    "test": "mocha --parallel --jobs 4 --timeout 10s -r ts-node/register src/tests/**/*.test.ts",
+    "test": "mocha --timeout 10s",
     "test:watch": "nodemon --watch . --ext ts --exec \"yarn test\""
   },
   "dependencies": {

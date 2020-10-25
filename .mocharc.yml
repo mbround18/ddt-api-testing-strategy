@@ -1,0 +1,11 @@
+color: true
+spec: 
+  - './src/**/*.test.ts'
+recursive: true
+reporter: 'spec'
+require: 'ts-node/register'
+jobs: 4
+watch: false
+watch-files:
+  - 'src/test/**/*.js'
+parallel: true
