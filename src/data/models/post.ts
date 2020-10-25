@@ -17,7 +17,7 @@ export default class Post extends BaseModel<IPost> implements Partial<IPost> {
     this.collection = data.posts;
   }
 
-  public generate(): Partial<IPost> {
+  public generateMock(): Partial<IPost> {
     return {
       title: lorem.sentence(),
       userId: new User().findOne()?.id,

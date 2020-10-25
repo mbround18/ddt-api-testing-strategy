@@ -19,7 +19,7 @@ export default class Comment
     this.collection = data.comments;
   }
 
-  public generate(): Partial<IComment> {
+  public generateMock(): Partial<IComment> {
     return {
       body: lorem.paragraphs(2),
       postId: new Post().findOne()?.id

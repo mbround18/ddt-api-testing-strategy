@@ -14,7 +14,7 @@ export default class User extends BaseModel<IUser> implements Partial<IUser> {
     this.collection = data.users;
   }
 
-  public generate(): Partial<IUser> {
+  public generateMock(): Partial<IUser> {
     return {
       name: name.findName()
     };
