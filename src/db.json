@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server 1",
+      "userId": 1,
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tellus elementum sagittis vitae et leo duis ut. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Turpis tincidunt id aliquet risus feugiat in. Est sit amet facilisis magna etiam tempor orci eu. Odio eu feugiat pretium nibh ipsum consequat. Vestibulum rhoncus est pellentesque elit. Sodales ut eu sem integer vitae justo eget. Egestas congue quisque egestas diam in. Magna ac placerat vestibulum lectus mauris ultrices. Adipiscing commodo elit at imperdiet. Mollis nunc sed id semper. Facilisi morbi tempus iaculis urna id. Faucibus nisl tincidunt eget nullam non nisi. A scelerisque purus semper eget duis. Pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies. Arcu ac tortor dignissim convallis. Pellentesque nec nam aliquam sem et tortor."
+    },
+    {
+      "id": 2,
+      "title": "python",
+      "userId": 1,
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. Nunc vel risus commodo viverra maecenas accumsan lacus vel."
+    },
+    {
+      "id": 3,
+      "title": "git",
+      "userId": 1,
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra aliquet eget sit. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Ante metus dictum at tempor commodo ullamcorper a lacus. Egestas maecenas pharetra convallis posuere morbi."
+    }
+  ],
+  "comments": [
+    { "id": 1, "body": "Python is Fun!", "postId": 1 },
+    { "id": 2, "body": "Git is Fun!", "postId": 1 },
+    { "id": 3, "body": "Thank you json-server!", "postId": 1 }
+  ],
+  "users": [{ "id": 1, "name": "typicode" }]
+}
