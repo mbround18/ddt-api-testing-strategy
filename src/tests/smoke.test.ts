@@ -17,8 +17,10 @@ Object.entries(routes).forEach(([routeName, routeInfo]) => {
 
     // GET single happy path test
     it('should be able to get a member', async () => {
+      const model = new routeInfo.model();
+      const data = await model.findOne();
       const res = await request
-        .get(`/${routeName}/1`)
+        .get(`/${routeName}/${data.id}`)
         .set('Accept', 'application/json');
       expect(res.status).to.equal(200);
       expect(res.body).not.to.be.empty;
