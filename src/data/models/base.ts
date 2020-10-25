@@ -2,6 +2,10 @@ import { get, sample, merge } from 'lodash';
 import { plural } from 'pluralize';
 import { database } from '../../database';
 
+
+/**
+ * Base model providing base functionality. 
+ */
 export default class BaseModel<T> {
   [k: string]: any;
 

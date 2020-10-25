@@ -8,7 +8,6 @@ import { chaosMonkey } from '../utils/chaosMonkey';
 
 
 describe('Negative Static Smoke Tests', () => {
-
   HTTP_METHODS.forEach(httpMethod => {
     it(`should return a 404 for invalid ${httpMethod} route`, async () => {
       const res = await request[httpMethod](`/${random.alphaNumeric(10)}`)
@@ -17,13 +16,11 @@ describe('Negative Static Smoke Tests', () => {
       expect(res.body).to.deep.equal({});
     });
   });
-  
-  
 });
 
 Object.entries(routes).forEach(([routeName, routeInfo]) => {
   describe(`${routeName.toUpperCase()} Negative Test`, async () => {
-    // GET single happy path test
+    // GET single negative path test
     it('should return 404 for non-existant a member', async () => {
       const res = await request
         .get(`/${routeName}/${random.number() * 9}`)
@@ -32,7 +29,7 @@ Object.entries(routes).forEach(([routeName, routeInfo]) => {
       expect(res.body).to.be.empty;
     });
 
-    // POST happy path test
+    // POST negative path test
     it('should sanatize posting garbage data', async () => {
       const model = new routeInfo.model();
       const data = await model.create();
@@ -48,7 +45,7 @@ Object.entries(routes).forEach(([routeName, routeInfo]) => {
       expect(pick(res.body, dataKeys)).to.deep.equal(chaosData);
     });
 
-    // PUT Happy path test
+    // PUT negative path test
     it('should be able to update a member', async () => {
       const model = new routeInfo.model();
       const data = await model.findOne();
