@@ -15,10 +15,8 @@ export default class User extends BaseModel<IUser> implements Partial<IUser> {
   }
 
   public generate(): Partial<IUser> {
-    const user = {
+    return {
       name: name.findName()
     };
-    merge(this, user);
-    return user;
   }
 }

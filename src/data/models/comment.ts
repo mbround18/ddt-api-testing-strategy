@@ -20,12 +20,10 @@ export default class Comment
   }
 
   public generate(): Partial<IComment> {
-    const comment = {
+    return {
       body: lorem.paragraphs(2),
       postId: new Post().findOne()?.id
     };
-    merge(this, comment);
-    return comment;
   }
 
   public toJson() {}

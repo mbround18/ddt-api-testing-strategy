@@ -1,4 +1,4 @@
-import { get, first } from 'lodash';
+import { get, first, merge } from 'lodash';
 
 export default class BaseModel<T> {
   [k: string]: any;
@@ -24,7 +24,15 @@ export default class BaseModel<T> {
     );
   }
 
-  public generate() {
+  // This is a stub which will throw if the model does not implement it correctly.
+  public generateMock(): Partial<T> {
     throw new Error('Not yet implemented!');
+  }
+
+  // If real data is provided, create for information else use mock.
+  public create(opts?: T): Partial<T> {
+    const data = opts || this.generateMock();
+    merge(this, data);
+    return data;
   }
 }

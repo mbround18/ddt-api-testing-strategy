@@ -18,13 +18,11 @@ export default class Post extends BaseModel<IPost> implements Partial<IPost> {
   }
 
   public generate(): Partial<IPost> {
-    const post = {
+    return {
       title: lorem.sentence(),
       userId: new User().findOne()?.id,
       content: lorem.paragraphs(2)
     };
-    merge(this, post);
-    return post;
   }
 
   public toJson() {}
