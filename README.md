@@ -18,14 +18,19 @@ You have an API you wish to automate and in this scenario we will be taking a lo
 
 When breaking down an API to test, here are some basic acceptance criteria which are a great starting point:
 
-1. The code base is well organized, DRY, easily readable and appropriately commented
-1. The project’s git commit history is well commented and easy to understand.
-1. The tests are reliable, and can be executed numerous times in a row without failures
-1. Happy path tests were built for all major endpoints
-1. Negative path tests were built testing for standard failures
-1. Tests have detailed logs or reports helping to troubleshoot failures
-1. Tests can be executed in parallel
-1. Tests are data driven for maximum coverage
+### Ideals
+
+- The code base is well organized, DRY, easily readable and appropriately commented
+- The project’s git commit history is well commented and easy to understand.
+- The tests are reliable, and can be executed numerous times in a row without failures
+
+### Tasks
+
+- [x] Happy path tests were built for all major endpoints
+- [ ] Negative path tests were built testing for standard failures
+- [ ] Tests have detailed logs or reports helping to troubleshoot failures
+- [x] Tests can be executed in parallel
+- [x] Tests are data driven for maximum coverage
 
 [//]: <> (Links Below...)
 
