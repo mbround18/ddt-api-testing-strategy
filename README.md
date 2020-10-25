@@ -6,17 +6,9 @@
 
 ## Assumptions
 
-- Moderate understanding of how to code in `python` or similar language.
+- Moderate understanding of how to code in `Javascript|Typescript` or similar language.
 - Moderate understanding of `git`.
-- Know how to install python modules.
-
-### Knowledge Share
-
-If you are missing any of the assumptions above please see the following links to brush up.
-
-- [Python For Beginners](https://www.python.org/about/gettingstarted/)
-- [What is pip](https://realpython.com/what-is-pip/)
-- [Git for Beginners](https://www.freecodecamp.org/news/an-introduction-to-git-for-absolute-beginners-86fa1d32ff71/)
+- Moderate knowledge of `Yarn`.
 
 ## The Problem
 
