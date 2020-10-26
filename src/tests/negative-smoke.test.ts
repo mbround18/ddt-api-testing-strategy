@@ -6,12 +6,13 @@ import { random } from 'faker';
 import { HTTP_METHODS } from '../utils/constants';
 import { chaosMonkey } from '../utils/chaosMonkey';
 
-
 describe('Negative Static Smoke Tests', () => {
   HTTP_METHODS.forEach(httpMethod => {
     it(`should return a 404 for invalid ${httpMethod} route`, async () => {
-      const res = await request[httpMethod](`/${random.alphaNumeric(10)}`)
-        .set('Accept', 'application/json');
+      const res = await request[httpMethod](`/${random.alphaNumeric(10)}`).set(
+        'Accept',
+        'application/json'
+      );
       expect(res.status).to.equal(httpMethod === 'options' ? 204 : 404);
       expect(res.body).to.deep.equal({});
     });

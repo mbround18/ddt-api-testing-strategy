@@ -31,6 +31,16 @@ When breaking down an API to test, here are some basic acceptance criteria which
 - [~] Tests have detailed logs or reports helping to troubleshoot failures
 - [x] Tests can be executed in parallel
 - [x] Tests are data driven for maximum coverage
+- [ ] Personal - Create a blog post about the testing methodology and how this repository covers it.
+
+## Getting Started
+
+1. Download and install NodeJS lts
+1. Download and install git
+1. Download and install yarn
+1. Clone with repository `git clone <url>`
+1. Install the project dependancies: `yarn install`
+1. Run the tests `yarn test`
 
 [//]: <> (Links Below...)
 
